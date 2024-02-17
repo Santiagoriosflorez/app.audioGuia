@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+        <EditText
+            android:id="@+id/login_search"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/lavender_border"
+            android:drawablePadding="8dp"
+            android:hint="Buscar"
+            android:padding="8dp" />
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/baseline_search_24"
+        android:text="Iniciar Sesion"
+        android:layout_marginLeft="350dp"
+        android:textSize="18sp"
+        app:cornerRadius="30dp"
+        />
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_search"
+        android:layout_marginTop="0dp" />
+
+
+
+</RelativeLayout>
